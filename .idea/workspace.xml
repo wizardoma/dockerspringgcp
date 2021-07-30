@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add journal client microservice" />
+    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add journal server microservice">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/JournalServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/JournalServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +33,21 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vzM4C2vlRQrMihfFsbJiaCYREb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +84,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EaurekaclientApplication">
+  <component name="RunManager" selected="Spring Boot.JournalServerApplication">
     <configuration name="EaurekaclientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eaurekaclient" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wizardom.eaurekaclient.EaurekaclientApplication" />
@@ -103,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627560270863</updated>
       <workItem from="1627560281962" duration="2822000" />
-      <workItem from="1627630589465" duration="2973000" />
+      <workItem from="1627630589465" duration="8402000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -119,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627640088525</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add journal server microservice">
+      <created>1627640604709</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627640604709</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,13 +161,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add eureka service discovery server microservice" />
     <MESSAGE value="Add journal client microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add journal client microservice" />
+    <MESSAGE value="Add journal server microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add journal server microservice" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="4" key="#Project_Structure" timestamp="1627561380839">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="4" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1627561380839" />
+    <state x="605" y="137" key="#com.intellij.ide.util.MemberChooser" timestamp="1627642261760">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1627642261760" />
+    <state x="530" y="177" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1627645887043">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="530" y="177" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1627645887043" />
     <state x="661" y="328" key="Github.ShareDialog" timestamp="1627561432915">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -154,45 +185,45 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627640013690">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627646206627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
-    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627640013690">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627646206627" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627646206627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
-    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627640013689">
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627646206627" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627646206627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627640013689" />
-    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627640013690">
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627646206627" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627646206627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627640013691">
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627646206627" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627646206628">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627640013691" />
-    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627640013691">
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627646206628" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627646206628">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627640013691" />
-    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627640013690">
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627646206628" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627646206627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
-    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627640013691">
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627646206627" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627646206628">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627640013691" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627640110284">
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627646206628" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627640617972">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627640110284" />
-    <state x="182" y="51" key="new project wizard" timestamp="1627639803160">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627640617972" />
+    <state x="182" y="51" key="new project wizard" timestamp="1627640366996">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="182" y="51" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1627639803160" />
+    <state x="182" y="51" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1627640366996" />
   </component>
 </project>
