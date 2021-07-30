@@ -19,13 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add journal client logic implementation">
+    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="use feign client for microservice communications">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eaurekaclient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/EaurekaclientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/EaurekaclientApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/JournalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/journal_server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627560270863</updated>
       <workItem from="1627560281962" duration="2822000" />
-      <workItem from="1627630589465" duration="14452000" />
+      <workItem from="1627630589465" duration="22175000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627651440131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="use feign client for microservice communications">
+      <created>1627654724011</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627654724011</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +187,8 @@
     <MESSAGE value="Add journal server microservice" />
     <MESSAGE value="Add journal server business logic implementation" />
     <MESSAGE value="Add journal client logic implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add journal client logic implementation" />
+    <MESSAGE value="use feign client for microservice communications" />
+    <option name="LAST_COMMIT_MESSAGE" value="use feign client for microservice communications" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="4" key="#Project_Structure" timestamp="1627561380839">
@@ -203,49 +211,49 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627654577692">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627655356977">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
-    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627654577692">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627655356977">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
-    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627654577691">
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627655356977">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627654577691" />
-    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627654577692">
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627655356977">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627654577693">
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627655356978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627654577693" />
-    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627654577692">
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627655356978" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627655356978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
-    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627654577692">
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627655356978" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627655356977">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
-    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627654577693">
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627655356978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627654577693" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627655356978" />
     <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1627652981509">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="330" y="85" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1627652981509" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627651441861">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627654725586">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627651441861" />
-    <state x="182" y="51" key="new project wizard" timestamp="1627640366996">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627654725586" />
+    <state x="182" y="51" key="new project wizard" timestamp="1627657595115">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="182" y="51" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1627640366996" />
+    <state x="182" y="51" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1627657595115" />
   </component>
 </project>

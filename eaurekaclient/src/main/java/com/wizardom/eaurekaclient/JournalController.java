@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Collection;
-import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
@@ -19,18 +18,17 @@ public class JournalController {
 
     @GetMapping()
     public Collection<Journal> getJournals() {
-        return  journalClient.getJournals().getBody();
-
+        return journalClient.getJournals().getBody();
     }
 
     @GetMapping("{id}")
     public Journal getJournalById(@PathVariable long id) {
-        return  journalClient.getJournalById(id).getBody();
+        return journalClient.getJournalById(id).getBody();
     }
 
     @GetMapping("users/{id}")
     public Collection<Journal> getJournalsByUser(@PathVariable("id") long id) {
-        return  journalClient.getJournalsByUser(id).getBody();
+        return journalClient.getJournalsByUser(id).getBody();
 
     }
 }
