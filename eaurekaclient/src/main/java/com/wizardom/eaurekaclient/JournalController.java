@@ -15,19 +15,22 @@ import java.util.List;
 @RequestMapping("journals")
 public class JournalController {
     private final RestTemplate restTemplate;
+    private final JournalClient journalClient;
 
     @GetMapping()
     public Collection<Journal> getJournals() {
-        return List.of(restTemplate.getForObject("http://localhost:8081/journals", Journal[].class));
+        return  journalClient.getJournals().getBody();
+
     }
 
     @GetMapping("{id}")
     public Journal getJournalById(@PathVariable long id) {
-        return restTemplate.getForObject("http://localhost:8081/journals/{id}", Journal.class, id);
+        return  journalClient.getJournalById(id).getBody();
     }
 
     @GetMapping("users/{id}")
     public Collection<Journal> getJournalsByUser(@PathVariable("id") long id) {
-        return List.of(restTemplate.getForObject("http://localhost:8081/journals/users/{id}", Journal[].class, id));
+        return  journalClient.getJournalsByUser(id).getBody();
+
     }
 }

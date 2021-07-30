@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add journal server business logic implementation">
+    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add journal client logic implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eaurekaclient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/EaurekaclientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/EaurekaclientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/controller/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/controller/JournalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/repository/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/repository/JournalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/repository/JournalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/service/JournalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/service/JournalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/JournalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627560270863</updated>
       <workItem from="1627560281962" duration="2822000" />
-      <workItem from="1627630589465" duration="11083000" />
+      <workItem from="1627630589465" duration="14452000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627646987821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add journal client logic implementation">
+      <created>1627651440131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627651440131</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +179,8 @@
     <MESSAGE value="Add journal client microservice" />
     <MESSAGE value="Add journal server microservice" />
     <MESSAGE value="Add journal server business logic implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add journal server business logic implementation" />
+    <MESSAGE value="Add journal client logic implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add journal client logic implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="4" key="#Project_Structure" timestamp="1627561380839">
@@ -195,42 +203,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627651023415">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627654577692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627651023415" />
-    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627651023415">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627654577692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627651023415" />
-    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627651023415">
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627654577691">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627651023415" />
-    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627651023415">
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627654577691" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627654577692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627651023415" />
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627651023416">
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627654577693">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627651023416" />
-    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627651023416">
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627654577693" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627654577692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627651023416" />
-    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627651023416">
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627654577692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627651023416" />
-    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627651023416">
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627654577692" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627654577693">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627651023416" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627646989568">
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627654577693" />
+    <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1627652981509">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627646989568" />
+    <state x="330" y="85" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1627652981509" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627651441861">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627651441861" />
     <state x="182" y="51" key="new project wizard" timestamp="1627640366996">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
