@@ -1,5 +1,7 @@
 package com.wizardom.journal_server.repository;
 
+import com.wizardom.journal_server.model.Journal;
+
 import java.util.Collection;
 import java.util.Optional;
 
@@ -11,4 +13,5 @@ public interface IRepository<T, I> {
     T edit(T t);
     Collection<T> getAll();
 
+    Collection<Journal> getByUser(long userId);
 }

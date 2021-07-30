@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("journals")
 public class JournalController {
-    private final  JournalService service;
+    private final JournalService service;
 
     @GetMapping()
     public ResponseEntity<?> getJournals() {
@@ -31,5 +31,10 @@ public class JournalController {
     @PatchMapping("{id}")
     public ResponseEntity<?> editJournal(@PathVariable("id") long id, @ModelAttribute Journal journal) throws Exception {
         return ResponseEntity.ok(service.editJournal(id, journal));
+    }
+
+    @GetMapping("users/{id}")
+    public ResponseEntity<?> getJournalsByUser(@PathVariable("id") long id) {
+        return ResponseEntity.ok(service.getByUser(id));
     }
 }

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import static com.wizardom.journal_server.config.JournalConfig.journals;
 
@@ -35,5 +36,10 @@ public class JournalRepository implements IRepository<Journal, Long> {
     @Override
     public Collection<Journal> getAll() {
         return journals;
+    }
+
+    @Override
+    public Collection<Journal> getByUser(long userId) {
+        return journals.stream().filter(journal -> journal.getUserId().equals(String.valueOf(userId))).collect(Collectors.toList());
     }
 }

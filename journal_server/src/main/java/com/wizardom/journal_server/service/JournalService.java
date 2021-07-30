@@ -14,8 +14,12 @@ public class JournalService {
 
     private final JournalRepository journalRepository;
 
-    public Collection<Journal> getAll(){
-        return  journalRepository.getAll();
+    public Collection<Journal> getByUser(long userId){
+        return  journalRepository.getByUser(userId);
+    }
+
+    public Collection<Journal> getAll() {
+        return journalRepository.getAll();
     }
 
     public Journal saveJournal(Journal journal) {
@@ -23,13 +27,16 @@ public class JournalService {
     }
 
     public Journal getById(long id) throws Exception {
-        return  journalRepository.getById(id).orElseThrow(()-> new Exception("Not found"));
+        return journalRepository
+                .getById(id)
+                .orElseThrow(() -> new Exception("Not found"));
     }
+
     public Journal editJournal(long id, Journal journal) throws Exception {
         Optional<Journal> journ = journalRepository.getById(id);
         if (journ.isEmpty()) {
-           throw  new Exception("Journal not found");
-       }
-        return  journalRepository.save(journal.setId(id));
+            throw new Exception("Journal not found");
+        }
+        return journalRepository.save(journal.setId(id));
     }
 }
