@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add eureka service discovery server microservice" />
+    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add journal client microservice" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +39,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -54,8 +58,16 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Dart" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.EaurekaclientApplication">
     <configuration name="EaurekaclientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -72,6 +84,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JournalServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="journal_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wizardom.journal_server.JournalServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627560270863</updated>
       <workItem from="1627560281962" duration="2822000" />
-      <workItem from="1627630589465" duration="2593000" />
+      <workItem from="1627630589465" duration="2973000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -93,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627639677209</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add journal client microservice">
+      <created>1627640088525</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627640088525</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +138,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add eureka service discovery server microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add eureka service discovery server microservice" />
+    <MESSAGE value="Add journal client microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add journal client microservice" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="4" key="#Project_Structure" timestamp="1627561380839">
@@ -127,10 +154,42 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627639679743">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627640013690">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627639679743" />
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627640013690">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627640013689">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627640013689" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627640013690">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627640013691">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627640013691" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627640013691">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627640013691" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627640013690">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627640013690" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627640013691">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627640013691" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627640110284">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627640110284" />
     <state x="182" y="51" key="new project wizard" timestamp="1627639803160">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
