@@ -13,7 +13,8 @@ services:
         -DEUREKA_SERVER=http://discovery:8761/eureka
         -Dspring.cloud.config.server.native.searchLocations=/var/config-data
     depends_on:
-      - discovery
+      - eureka-server
+      - journal-server
     ports:
       - 8888:8888
   journal-server:
@@ -22,7 +23,6 @@ services:
       - JAVA_OPTS=
         -DEUREKA_SERVER=http://discovery:8761/eureka
     depends_on:
-      - discovery
-      - config
+      - eureka-server
     ports:
       - 8080:8080
