@@ -1,40 +1,26 @@
-version: '3'
+version: '3.8'
 services:
   eureka-server:
-    hostname: eureka
-    networks:
-      - my-shared-network
     image: dockerspringgcp-eurekaserver:0.0.1-SNAPSHOT
     build: eurekaserver/
     ports:
       - 8761:8761
   eureka-client:
-    networks:
-      - my-shared-network
     image: dockerspringgcp-eaurekaclient:0.0.1-SNAPSHOT
     build: eaurekaclient/
-    volumes:
-      - ./config-data:/var/config-data
-    environment:
-      - JAVA_OPTS=
-        -DEUREKA_SERVER=http://eureka:8761/eureka
-        -Dspring.cloud.config.server.native.searchLocations=/var/config-data
     depends_on:
       - eureka-server
       - journal-server
+    environment:
+      SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://eureka-server:8761/eureka"}}}}'
     ports:
-      - 8888:8888
+      - 8081:8081
   journal-server:
-    networks:
-      - my-shared-network
     build: journal_server/
     image: dockerspringgcp-journal_server:0.0.1-SNAPSHOT
-    environment:
-      - JAVA_OPTS=
-        -DEUREKA_SERVER=http://eureka:8761/eureka
     depends_on:
       - eureka-server
+    environment:
+      SPRING_APPLICATION_JSON: '{"eureka":{"client":{"serviceUrl":{"defaultZone":"http://eureka-server:8761/eureka"}}}}'
     ports:
       - 8080:8080
-networks:
-  my-shared-network:

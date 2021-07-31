@@ -19,9 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="Add jar files">
+    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="assign hostname to eureka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/EaurekaclientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/java/com/wizardom/eaurekaclient/EaurekaclientApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/java/com/wizardom/eurekaserver/EurekaserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/java/com/wizardom/eurekaserver/EurekaserverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/JournalServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/java/com/wizardom/journal_server/JournalServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +107,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EaurekaclientApplication">
+  <component name="RunManager" selected="Application.EaurekaclientApplication">
+    <configuration name="EaurekaclientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wizardom.eaurekaclient.EaurekaclientApplication" />
+      <module name="eaurekaclient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wizardom.eaurekaclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EaurekaclientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eaurekaclient" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wizardom.eaurekaclient.EaurekaclientApplication" />
@@ -124,6 +142,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EaurekaclientApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -140,7 +163,7 @@
       <workItem from="1627677805962" duration="1076000" />
       <workItem from="1627678935912" duration="424000" />
       <workItem from="1627679838959" duration="5805000" />
-      <workItem from="1627718458204" duration="3878000" />
+      <workItem from="1627718458204" duration="17181000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -219,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627722238973</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refractor">
+      <created>1627723777821</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627723777821</updated>
+    </task>
+    <task id="LOCAL-00013" summary="assign hostname to eureka">
+      <created>1627724487580</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627724487580</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +286,9 @@
     <MESSAGE value="refractor: correct service names in docker-compose.yaml" />
     <MESSAGE value="fix: did not specify build folders for docker compose" />
     <MESSAGE value="Add jar files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add jar files" />
+    <MESSAGE value="refractor" />
+    <MESSAGE value="assign hostname to eureka" />
+    <option name="LAST_COMMIT_MESSAGE" value="assign hostname to eureka" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="4" key="#Project_Structure" timestamp="1627561380839">
@@ -260,6 +299,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="137" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1627651146236" />
+    <state x="593" y="121" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1627727453886">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="593" y="121" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1600.860@0.0.1600.860" timestamp="1627727453886" />
     <state x="530" y="177" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1627645887043">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -280,38 +323,38 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state width="878" height="219" key="GridCell.Tab.0.bottom" timestamp="1627723546041">
+    <state width="1193" height="409" key="GridCell.Tab.0.bottom" timestamp="1627748977302">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627723546041" />
-    <state width="878" height="219" key="GridCell.Tab.0.center" timestamp="1627723546040">
+    <state width="1193" height="409" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627748977302" />
+    <state width="1193" height="409" key="GridCell.Tab.0.center" timestamp="1627748977302">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627723546040" />
-    <state width="878" height="219" key="GridCell.Tab.0.left" timestamp="1627723546040">
+    <state width="1193" height="409" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627748977302" />
+    <state width="1193" height="409" key="GridCell.Tab.0.left" timestamp="1627748977302">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627723546040" />
-    <state width="878" height="219" key="GridCell.Tab.0.right" timestamp="1627723546040">
+    <state width="1193" height="409" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627748977302" />
+    <state width="1193" height="409" key="GridCell.Tab.0.right" timestamp="1627748977302">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627723546040" />
-    <state width="878" height="219" key="GridCell.Tab.1.bottom" timestamp="1627723546042">
+    <state width="1193" height="409" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627748977302" />
+    <state width="1193" height="409" key="GridCell.Tab.1.bottom" timestamp="1627748977303">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627723546042" />
-    <state width="878" height="219" key="GridCell.Tab.1.center" timestamp="1627723546041">
+    <state width="1193" height="409" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627748977303" />
+    <state width="1193" height="409" key="GridCell.Tab.1.center" timestamp="1627748977303">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627723546041" />
-    <state width="878" height="219" key="GridCell.Tab.1.left" timestamp="1627723546041">
+    <state width="1193" height="409" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627748977303" />
+    <state width="1193" height="409" key="GridCell.Tab.1.left" timestamp="1627748977303">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627723546041" />
-    <state width="878" height="219" key="GridCell.Tab.1.right" timestamp="1627723546042">
+    <state width="1193" height="409" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627748977303" />
+    <state width="1193" height="409" key="GridCell.Tab.1.right" timestamp="1627748977303">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627723546042" />
+    <state width="1193" height="409" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627748977303" />
     <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1627652981509">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -320,10 +363,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="240" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1627679364529" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627722241659">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627724489221">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627722241659" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627724489221" />
     <state x="471" y="146" width="579" height="568" key="find.popup" timestamp="1627717654775">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
