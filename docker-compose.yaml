@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  eureka-server:
+    image: com.wizardom.dockerspringgcp/dockerspringgcp-eurekaserver:0.0.1-SNAPSHOT
+    ports:
+      - 8761:8761
+  eureka-client:
+    image: com.wizardom.dockerspringgcp/dockerspringgcp-eaurekaclient:0.0.1-SNAPSHOT
+    volumes:
+      - ./config-data:/var/config-data
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery:8761/eureka
+        -Dspring.cloud.config.server.native.searchLocations=/var/config-data
+    depends_on:
+      - discovery
+    ports:
+      - 8888:8888
+  journal-server:
+    image: com.wizardom.dockerspringgcp/dockerspringgcp-journal_server:0.0.1-SNAPSHOT
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://discovery:8761/eureka
+    depends_on:
+      - discovery
+      - config
+    ports:
+      - 8080:8080

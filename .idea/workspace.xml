@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="dockerize services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/journal_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="11" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="11" />
   </component>
   <component name="ProjectId" id="1vzM4C2vlRQrMihfFsbJiaCYREb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -72,10 +81,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Dart" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -125,7 +134,10 @@
       <option name="presentableId" value="Default" />
       <updated>1627560270863</updated>
       <workItem from="1627560281962" duration="2822000" />
-      <workItem from="1627630589465" duration="22818000" />
+      <workItem from="1627630589465" duration="24355000" />
+      <workItem from="1627677805962" duration="1076000" />
+      <workItem from="1627678935912" duration="424000" />
+      <workItem from="1627679838959" duration="1166000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -192,6 +204,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add eureka service discovery server microservice" />
@@ -216,6 +229,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1627645887043" />
+    <state x="486" y="57" key="#journal_server/.DockerFile" timestamp="1627677948926">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="486" y="57" key="#journal_server/.DockerFile/0.0.1600.860@0.0.1600.860" timestamp="1627677948926" />
     <state x="661" y="328" key="Github.ShareDialog" timestamp="1627561432915">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -224,42 +241,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627655356977">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1627677756855">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
-    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627655356977">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627677756855" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1627677756854">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
-    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627655356977">
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627677756854" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1627677756854">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
-    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627655356977">
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627677756854" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1627677756854">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627655356978">
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627677756854" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1627677756856">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627655356978" />
-    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627655356978">
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627677756856" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1627677756855">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627655356978" />
-    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627655356977">
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627677756855" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1627677756855">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627655356977" />
-    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627655356978">
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627677756855" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1627677756856">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627655356978" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627677756856" />
     <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1627652981509">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="330" y="85" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1627652981509" />
+    <state x="240" y="4" key="SettingsEditor" timestamp="1627679364529">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="240" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1627679364529" />
     <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627673803051">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
