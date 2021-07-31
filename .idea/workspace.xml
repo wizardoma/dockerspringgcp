@@ -19,15 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="refractor: correct service names in docker-compose.yaml">
+    <list default="true" id="1b487ba3-1593-4bde-92ba-73c6d2c7b4df" name="Default Changelist" comment="fix: did not specify build folders for docker compose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eaurekaclient/.DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eaurekaclient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/.DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/eaurekaclient/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/.DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/journal_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/journal_server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eaurekaclient" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -143,7 +137,8 @@
       <workItem from="1627630589465" duration="24355000" />
       <workItem from="1627677805962" duration="1076000" />
       <workItem from="1627678935912" duration="424000" />
-      <workItem from="1627679838959" duration="5720000" />
+      <workItem from="1627679838959" duration="5805000" />
+      <workItem from="1627718458204" duration="2256000" />
     </task>
     <task id="LOCAL-00001" summary="Add eureka service discovery server microservice">
       <created>1627639677208</created>
@@ -208,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627714689923</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix: did not specify build folders for docker compose">
+      <created>1627718158433</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627718158433</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +238,8 @@
     <MESSAGE value="dockerize services" />
     <MESSAGE value="Add docker compose" />
     <MESSAGE value="refractor: correct service names in docker-compose.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractor: correct service names in docker-compose.yaml" />
+    <MESSAGE value="fix: did not specify build folders for docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: did not specify build folders for docker compose" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="4" key="#Project_Structure" timestamp="1627561380839">
@@ -267,38 +270,38 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="135" key="Github.UntrackedFilesDialog/0.0.1600.860@0.0.1600.860" timestamp="1627561477933" />
-    <state width="878" height="219" key="GridCell.Tab.0.bottom" timestamp="1627715851749">
+    <state width="878" height="219" key="GridCell.Tab.0.bottom" timestamp="1627718197387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627715851749" />
-    <state width="878" height="219" key="GridCell.Tab.0.center" timestamp="1627715851749">
+    <state width="878" height="219" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627718197387" />
+    <state width="878" height="219" key="GridCell.Tab.0.center" timestamp="1627718197386">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627715851749" />
-    <state width="878" height="219" key="GridCell.Tab.0.left" timestamp="1627715851749">
+    <state width="878" height="219" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1627718197386" />
+    <state width="878" height="219" key="GridCell.Tab.0.left" timestamp="1627718197386">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627715851749" />
-    <state width="878" height="219" key="GridCell.Tab.0.right" timestamp="1627715851749">
+    <state width="878" height="219" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1627718197386" />
+    <state width="878" height="219" key="GridCell.Tab.0.right" timestamp="1627718197387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627715851749" />
-    <state width="878" height="219" key="GridCell.Tab.1.bottom" timestamp="1627715851750">
+    <state width="878" height="219" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1627718197387" />
+    <state width="878" height="219" key="GridCell.Tab.1.bottom" timestamp="1627718197387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627715851750" />
-    <state width="878" height="219" key="GridCell.Tab.1.center" timestamp="1627715851750">
+    <state width="878" height="219" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1627718197387" />
+    <state width="878" height="219" key="GridCell.Tab.1.center" timestamp="1627718197387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627715851750" />
-    <state width="878" height="219" key="GridCell.Tab.1.left" timestamp="1627715851750">
+    <state width="878" height="219" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1627718197387" />
+    <state width="878" height="219" key="GridCell.Tab.1.left" timestamp="1627718197387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627715851750" />
-    <state width="878" height="219" key="GridCell.Tab.1.right" timestamp="1627715851750">
+    <state width="878" height="219" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1627718197387" />
+    <state width="878" height="219" key="GridCell.Tab.1.right" timestamp="1627718197387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="878" height="219" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627715851750" />
+    <state width="878" height="219" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1627718197387" />
     <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1627652981509">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -307,10 +310,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="240" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1627679364529" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627714691692">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1627718160726">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627714691692" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1627718160726" />
     <state x="471" y="146" width="579" height="568" key="find.popup" timestamp="1627717654775">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
