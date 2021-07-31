@@ -87,7 +87,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>com.wizardom.dockerspringgcp/dockerspringgcp-${project.artifactId}</repository>
+                    <repository>dockerspringgcp-${project.artifactId}</repository>
                     <tag>${project.version}</tag>
                     <buildArgs>
                         <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
